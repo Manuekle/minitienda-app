@@ -14,5 +14,24 @@ namespace Logic
             return objCat.showCategories();
         }
 
+        public DataSet showCategoriesDDL()
+        {
+            return objCat.showCategoriesDDL();
+        }
+
+        public bool saveCategory(string _description, DateTime _fecha)
+        {
+            return objCat.saveCategory(_description, _fecha);
+        }
+
+        public bool updateCategory(int _idCategory, string _description)
+        {
+            return objCat.updateCategory(_idCategory, _description);
+        }
+
+        public bool deleteCategory(int _idCategory)
+        {
+            return objCat.deleteCategory(_idCategory);
+        }
     }
 }
